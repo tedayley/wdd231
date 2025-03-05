@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A personal website showcasing my projects and links to my professional profiles.">
     <meta name="author" content="Taeg Dayley">
-    <title>Taeg Dayley's website</title>
-    <!-- Google Fonts -->
+    <title>Taeg Dayley's Website</title>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Lora:wght@700&display=swap" rel="stylesheet">
+
     <!-- Link to CSS -->
     <link rel="stylesheet" href="styles/base.css">
 </head>
 
 <body>
+    <header>
+        <h1>Taeg Dayley</h1>
+        <p>Welcome to my personal website where I showcase my projects and professional profiles.</p>
+    </header>
+
     <nav>
         <div class="logo">
             <span>Taeg Dayley</span>
@@ -39,15 +48,21 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt tincidunt velit.</p>
             <p>Curabitur feugiat dui non dolor dictum, eget sollicitudin libero feugiat.</p>
         </div>
+
+        <!-- New Section -->
+        <section class="column">
+            <h2>New Section</h2>
+            <p>section three.</p>
+        </section>
     </main>
 
     <footer>
-        <p>&copy; <span id="currentYear"></span> Your Name, Your State or Country</p>
+        <p>&copy; <span id="currentYear"></span> Taeg Dayley, Your State or Country</p>
         <p id="lastModified"></p>
     </footer>
 
-    <!-- Link to JavaScript -->
-    <script src="script.js"></script>
+    <!-- Link to external JavaScript -->
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
