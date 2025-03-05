@@ -112,3 +112,29 @@ footer {
     background-color: #333;
     color: white;
 }
+
+.course {
+    padding: 10px;
+    margin: 5px 0;
+    border-left: 5px solid gray;
+    background-color: #f5f5f5;
+}
+
+.course.completed {
+    border-left-color: green;
+    background-color: #d4edda;
+}
+
+.course-buttons button {
+    margin: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+}
+
+.course-buttons button:hover {
+    background-color: #0056b3;
+}
