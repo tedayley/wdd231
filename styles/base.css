@@ -87,24 +87,43 @@ nav .logo span {
     }
 }
 
-/* Two-Column Layout */
 .container {
     display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
+    flex-wrap: wrap;  /* Allows wrapping to the next row */
+    justify-content: space-between;
     gap: 20px;
-    max-width: 1200px;
-    margin: auto;
+}
+
+.columns {
+    display: flex;
+    width: 100%;
+    gap: 20px;
 }
 
 .column {
-    flex: 1;
-    min-width: 300px;
-    background-color: #222;
+    flex: 1; /* Makes each column take up equal space */
     padding: 20px;
+    background: #f5f5f5;
     border-radius: 8px;
 }
 
+/* Column 3 (Full Width) */
+.full-width {
+    width: 100%; /* Ensures Column 3 is below the others */
+    margin-top: 20px;
+    background: #e3f2fd;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+    }
+    
+    .column, .full-width {
+        width: 100%;
+    }
+}
 /* Footer */
 footer {
     text-align: center;
