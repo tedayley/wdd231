@@ -103,7 +103,7 @@ nav .logo span {
 .column {
     flex: 1; /* Makes each column take up equal space */
     padding: 20px;
-    background: #f5f5f5;
+    background: #202020;
     border-radius: 8px;
 }
 
@@ -111,7 +111,7 @@ nav .logo span {
 .full-width {
     width: 100%; /* Ensures Column 3 is below the others */
     margin-top: 20px;
-    background: #e3f2fd;
+    background: #000000;
 }
 
 /* Responsive Design for Mobile */
@@ -140,8 +140,8 @@ footer {
 }
 
 .course.completed {
-    border-left-color: green;
-    background-color: #d4edda;
+    border-left-color: rgb(201, 201, 201);
+    background-color: #5c5c5c;
 }
 
 .course-buttons button {

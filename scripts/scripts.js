@@ -17,11 +17,11 @@ document.getElementById('lastModified').textContent = "Last modified: " + docume
 
 // Course List Array
 const courses = [
-    { code: "WDD 130", name: "Web Fundamentals", completed: false },
+    { code: "WDD 130", name: "Web Fundamentals", completed: true},
     { code: "WDD 230", name: "Advanced CSS", completed: false },
     { code: "WDD 330", name: "JavaScript Programming", completed: false },
-    { code: "CSE 110", name: "Programming with Python", completed: false },
-    { code: "CSE 210", name: "Object-Oriented Programming", completed: false },
+    { code: "CSE 110", name: "Programming with Python", completed: true },
+    { code: "CSE 210", name: "Object-Oriented Programming", completed: true },
     { code: "CSE 310", name: "Data Structures & Algorithms", completed: false }
 ];
 
@@ -31,6 +31,13 @@ courses.forEach(course => {
         course.completed = true;
     }
 });
+
+// Footer Date Updates
+document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;
+});
+
 
 // Function to display courses
 function displayCourses(filter = "all") {
