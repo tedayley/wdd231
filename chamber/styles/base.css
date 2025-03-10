@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #3b4f81; /* Primary color */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+section {
+    margin: 20px;
+}
+h1, h2, h3 {
+    color: #3b4f81;
+}
+.goal-list, .persona-list, .scenario-list {
+    list-style-type: none;
+    padding: 0;
+}
+.goal-list li, .persona-list li, .scenario-list li {
+    margin: 10px 0;
+}
