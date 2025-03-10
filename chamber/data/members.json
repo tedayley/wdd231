@@ -1,0 +1,68 @@
+{
+    "members": [
+      {
+        "name": "John Doe",
+        "address": "123 Maple St, Springfield, IL",
+        "phone": "(555) 123-4567",
+        "website_url": "https://johndoecompany.com",
+        "image_file_name": "john_doe.jpg",
+        "membership_level": "Gold",
+        "email": "johndoe@example.com"
+      },
+      {
+        "name": "Jane Smith",
+        "address": "456 Oak Ave, Shelbyville, IL",
+        "phone": "(555) 234-5678",
+        "website_url": "https://janesmith.com",
+        "image_file_name": "jane_smith.jpg",
+        "membership_level": "Silver",
+        "email": "janesmith@example.com"
+      },
+      {
+        "name": "Alice Johnson",
+        "address": "789 Pine Rd, Capital City, IL",
+        "phone": "(555) 345-6789",
+        "website_url": "https://alicejohnsonco.com",
+        "image_file_name": "alice_johnson.jpg",
+        "membership_level": "Platinum",
+        "email": "alicejohnson@example.com"
+      },
+      {
+        "name": "Bob Brown",
+        "address": "101 Birch Blvd, Springfield, IL",
+        "phone": "(555) 456-7890",
+        "website_url": "https://bobbrown.com",
+        "image_file_name": "bob_brown.jpg",
+        "membership_level": "Gold",
+        "email": "bobbrown@example.com"
+      },
+      {
+        "name": "Charlie Davis",
+        "address": "202 Cedar St, Springfield, IL",
+        "phone": "(555) 567-8901",
+        "website_url": "https://charliedavis.com",
+        "image_file_name": "charlie_davis.jpg",
+        "membership_level": "Silver",
+        "email": "charliedavis@example.com"
+      },
+      {
+        "name": "Dana White",
+        "address": "303 Maple Ave, Shelbyville, IL",
+        "phone": "(555) 678-9012",
+        "website_url": "https://danawhite.com",
+        "image_file_name": "dana_white.jpg",
+        "membership_level": "Bronze",
+        "email": "danawhite@example.com"
+      },
+      {
+        "name": "Eve Green",
+        "address": "404 Elm St, Capital City, IL",
+        "phone": "(555) 789-0123",
+        "website_url": "https://evegreen.com",
+        "image_file_name": "eve_green.jpg",
+        "membership_level": "Platinum",
+        "email": "evegreen@example.com"
+      }
+    ]
+  }
+  

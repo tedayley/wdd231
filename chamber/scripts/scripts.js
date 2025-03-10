@@ -42,3 +42,39 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 });
+
+// Async function to fetch members data and display it
+async function loadMembers() {
+    try {
+        // Fetch members data from the JSON file
+        const response = await fetch('members.json');
+        const data = await response.json();
+
+        // Get the container where members will be displayed
+        const membersList = document.getElementById('members-list');
+
+        // Loop through the members and create HTML elements for each
+        data.members.forEach(member => {
+            const memberCard = document.createElement('div');
+            memberCard.classList.add('member-card');
+
+            // Add member information
+            memberCard.innerHTML = `
+                <img src="images/${member.image_file_name}" alt="${member.name}">
+                <h3>${member.name}</h3>
+                <p>${member.address}</p>
+                <p>Phone: ${member.phone}</p>
+                <p><a href="${member.website_url}" target="_blank">Visit Website</a></p>
+                <p>Membership: ${member.membership_level}</p>
+            `;
+
+            // Append the card to the members list container
+            membersList.appendChild(memberCard);
+        });
+    } catch (error) {
+        console.error("Error loading members data:", error);
+    }
+}
+
+// Call the loadMembers function when the page loads
+window.onload = loadMembers;

@@ -318,3 +318,44 @@ nav.active {
         text-align: center;
     }
 }
+
+/* Members Directory Section */
+.members-directory {
+    padding: 20px;
+    text-align: center;
+}
+
+.members-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease-in-out;
+}
+
+.member-card:hover {
+    transform: scale(1.05);
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.member-card h3 {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.member-card p {
+    margin: 5px 0;
+}
