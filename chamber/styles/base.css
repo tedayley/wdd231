@@ -108,14 +108,19 @@ h1.big_text {
     margin-bottom: 20px;
 }
 
-.company-overview {
+.company-overview, .three-columns {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     margin-top: 40px;
 }
 
-.box {
+.company-overview, .three-columns {
+    flex-direction: column;
+    align-items: center;
+}
+
+.box, .content-text {
     background-color: white;
     padding: 30px;
     width: 30%;
@@ -124,39 +129,12 @@ h1.big_text {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.box h1 {
+.box h1, .content-text h2 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.box p {
-    font-size: 16px;
-    color: #555;
-}
-
-/* Three Columns Section */
-.three-columns {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.content-text {
-    background-color: white;
-    padding: 30px;
-    width: 30%;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-.content-text h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.content-text p {
+.box p, .content-text p {
     font-size: 16px;
     color: #555;
 }
@@ -211,6 +189,7 @@ footer p {
     nav {
         flex-direction: column;
         gap: 15px;
+        text-align: center;
     }
 
     .hero-text {
@@ -218,24 +197,13 @@ footer p {
         font-size: 16px;
     }
 
-    .company-overview {
+    .company-overview, .three-columns {
         flex-direction: column;
         align-items: center;
     }
 
-    .box {
+    .box, .content-text {
         width: 100%;
-        margin-bottom: 20px;
-        padding: 20px;
-    }
-
-    .three-columns {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .content-text {
-        width: 80%;
         margin-bottom: 20px;
         padding: 20px;
     }
@@ -259,8 +227,7 @@ footer p {
         font-size: 28px;
     }
 
-    .box h1,
-    .content-text h2 {
+    .box h1, .content-text h2 {
         font-size: 20px;
     }
 
@@ -284,12 +251,6 @@ footer p {
 }
 
 /* Mobile Navigation Menu */
-nav {
-    display: flex;
-    gap: 30px;
-}
-
-/* Active class for showing navigation on mobile */
 nav.active {
     display: block;
 }
@@ -299,18 +260,7 @@ nav.active {
     .nav-toggle {
         display: block;
     }
-    nav {
-        display: none; /* Hide menu by default on mobile */
-        flex-direction: column;
-        gap: 15px;
-        text-align: center;
-    }
-}
 
-@media screen and (max-width: 768px) {
-    .nav-toggle {
-        display: block;
-    }
     nav {
         display: none; /* Hide menu by default on mobile */
         flex-direction: column;
