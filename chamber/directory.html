@@ -6,24 +6,25 @@
     <meta name="description" content="A personal website showcasing my projects and links to my professional profiles.">
     <meta name="author" content="Taeg Dayley">
     <title>Taeg Dayley's Website</title>
-    
+
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Lora:wght@700&display=swap" rel="stylesheet">
 
     <!-- Link to CSS -->
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@300;600&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="styles/base.css">
 
+    <!-- Link to JavaScript -->
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <img src="images/logo2.png" alt="Rafting Company Logo" width="100">
+        
+        <!-- Mobile Navigation Toggle -->
+        <button class="nav-toggle">☰</button>
+
         <nav>
             <a href="../index.html">Home</a>
             <a href="../directory/index.html">Directory</a>
@@ -36,7 +37,7 @@
         <div class="hero">
             <img src="images/hero-wide.jpg" alt="Rafting Adventure" class="full-width">
             <div class="hero-text">
-                <a href="../join/index.html">Experience the thrill<a>
+                <a href="../join/index.html">Experience the thrill</a>
                 <p>Your next great adventure starts here.</p>
                 <a href="../discover/index.html" class="cta-button">Discover</a>
             </div>
@@ -46,19 +47,24 @@
         <section>
             <img src="images/logo2.png" alt="Rafting Action" class="full-width">
         </section>
+
         <h1 class="big_text">Home</h1>
+        
         <!-- Company Overview Section with 2 Columns -->
         <section class="company-overview">
             <div class="box">
-                <h1>events</h1>
+                <h1>Events</h1>
                 <p>We are bankrupt so nothing fun is planned</p>
             </div>
             <div class="box">
                 <h1>Current Weather</h1>
-                <p>Placeholder for dynamic weather updates</p>
+                <!-- Weather Placeholder -->
+                <div class="weather-placeholder">
+                    <!-- Weather info will be inserted here by JavaScript -->
+                </div>
             </div>
             <div class="box">
-                <h1>Weather forecast</h1>
+                <h1>Weather Forecast</h1>
                 <p>Placeholder for dynamic weather updates</p>
             </div>
         </section>
@@ -66,27 +72,28 @@
         <!-- Two Column Content Section -->
         <section class="three-columns">
             <div class="content-text">
-                <h2>Buisness Name</h2>
-                <p class="small_text">buisness tagline</p>
+                <h2>Business Name</h2>
+                <p class="small_text">Business tagline</p>
                 <p>Email:</p>
                 <p>Phone:</p>
                 <p>Url:</p>
             </div>
             <div class="content-text">
-                <h2>Buisness Name</h2>
-                <p class="small_text">buisness tagline</p>
+                <h2>Business Name</h2>
+                <p class="small_text">Business tagline</p>
                 <p>Email:</p>
                 <p>Phone:</p>
                 <p>Url:</p>
             </div>
             <div class="content-text">
-                <h2>Buisness Name</h2>
-                <p class="small_text">buisness tagline</p>
+                <h2>Business Name</h2>
+                <p class="small_text">Business tagline</p>
                 <p>Email:</p>
                 <p>Phone:</p>
                 <p>Url:</p>
             </div>
         </section>
+    </main>
 
     <footer>
         <p>©2025 White Water Rafting Co. | Taeg Dayley</p>

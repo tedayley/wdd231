@@ -270,3 +270,36 @@ footer p {
     }
 }
 
+/* Navigation Toggle Button for Mobile */
+.nav-toggle {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile Navigation Menu */
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+/* Active class for showing navigation on mobile */
+nav.active {
+    display: block;
+}
+
+/* Media Queries for Mobile Navigation */
+@media screen and (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+    nav {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
