@@ -67,12 +67,12 @@ nav a:hover {
 
 .hero-text a {
     color: #fff;
-    font-size: 24px;
+    font-size: 18px;
     text-decoration: none;
 }
 
 .hero-text p {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .cta-button {
@@ -91,6 +91,9 @@ nav a:hover {
 
 /* Full-width image between sections */
 section img.full-width {
+    display: block;       /* Makes the image a block-level element */
+    margin-left: auto;    /* Automatically adjusts left margin */
+    margin-right: auto;   /* Automatically adjusts right margin */
     width: 50%;
     height: auto;
     margin: 30px 0;
