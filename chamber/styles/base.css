@@ -91,9 +91,6 @@ nav a:hover {
 
 /* Full-width image between sections */
 section img.full-width {
-    display: block;       /* Makes the image a block-level element */
-    margin-left: auto;    /* Automatically adjusts left margin */
-    margin-right: auto;   /* Automatically adjusts right margin */
     width: 50%;
     height: auto;
     margin: 30px 0;
