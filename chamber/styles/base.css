@@ -325,11 +325,17 @@ nav.active {
     text-align: center;
 }
 
-.members-list {
+/* Grid layout (default) */
+.members-list.grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
     justify-items: center;
+}
+
+/* List layout */
+.members-list.list {
+    display: block;
 }
 
 .member-card {
@@ -339,6 +345,7 @@ nav.active {
     text-align: center;
     background-color: #f9f9f9;
     transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
 }
 
 .member-card:hover {
@@ -358,4 +365,20 @@ nav.active {
 
 .member-card p {
     margin: 5px 0;
+}
+
+/* Button Style */
+.toggle-button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 20px 0;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.toggle-button:hover {
+    background-color: #45a049;
 }

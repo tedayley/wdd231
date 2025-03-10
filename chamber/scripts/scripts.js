@@ -76,5 +76,22 @@ async function loadMembers() {
     }
 }
 
+// Toggle between grid and list view
+document.getElementById('toggle-view').addEventListener('click', () => {
+    const membersList = document.getElementById('members-list');
+    const button = document.getElementById('toggle-view');
+
+    // Toggle the grid/list class
+    membersList.classList.toggle('grid');
+    membersList.classList.toggle('list');
+
+    // Toggle button text
+    if (membersList.classList.contains('grid')) {
+        button.textContent = 'Switch to List View';
+    } else {
+        button.textContent = 'Switch to Grid View';
+    }
+});
+
 // Call the loadMembers function when the page loads
 window.onload = loadMembers;
