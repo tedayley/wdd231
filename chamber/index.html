@@ -5,16 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A personal website showcasing my projects and links to my professional profiles.">
     <meta name="author" content="Taeg Dayley">
-    <title>Taeg Dayley's Website</title>
-    
+    <title>San Miguel Chamber of Commerce</title>
 
     <!-- Open Graph Meta Tags -->
     <link rel="icon" href="images/favicon.png" type="logo/png" />
-    <meta property="og:title" content="Taeg Dayley's Website" />
-    <meta property="website" content="website" />
-    <meta property="og:image" content="images/logo.jpg" />
-    <meta property="og:url" content="https://tedayley.github.io/wdd231/index.html">
-    
+    <meta property="og:title" content="San Miguel Chamber of Commerce" />
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="logo.jpg" />
+    <meta property="og:url" content="https://tedayley.github.io/wdd231/chamber/index.html" />
 
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,15 +21,13 @@
 
     <!-- Link to CSS -->
     <link rel="stylesheet" href="styles/base.css">
+
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="logo">
-            <main>
-                <h1>Taeg Dayley's Website</h1>
-                <!-- Other sections go here -->
-            </main>            
+            <h1>San Miguel Chamber of Commerce</h1>
         </div>
         <nav>
             <ul>
@@ -63,28 +59,33 @@
             <h3>Current Events</h3>
             <ul>
                 <li>Marrying a train - March 25th, 2025</li>
-                <li>Dramatic reinactment of Monty Python - April 1st, 2025</li>
-                <li>Derivative Squaring Law - May 15th, 2025</li>
+                <li>Dramatic reinactment of monty python - April 1st, 2025</li>
+                <li>derivitive squaring law - May 15th, 2025</li>
             </ul>
         </section>
 
         <!-- Weather Section -->
         <section class="weather" id="weather">
             <h3>Current Weather</h3>
-            <p id="current-temperature">Loading...</p>
-            <p id="current-condition">Loading...</p>
-            <h4>3-Day Forecast</h4>
-            <ul id="forecast">
-                <li>Day 1: <span id="forecast-day1">Loading...</span></li>
-                <li>Day 2: <span id="forecast-day2">Loading...</span></li>
-                <li>Day 3: <span id="forecast-day3">Loading...</span></li>
-            </ul>
+            <p>Temperature: 72°F</p>
+            <p>Conditions: Sunny</p>
         </section>
 
         <!-- Company Spotlights Section -->
-        <section class="spotlights" id="spotlights">
+        <section class="spotlights">
             <h3>Company Spotlights</h3>
-            <!-- Spotlight cards will be dynamically loaded here -->
+            <div class="spotlight">
+                <h4>Company One</h4>
+                <p>Company One provides innovative solutions in technology, helping businesses streamline their operations.</p>
+            </div>
+            <div class="spotlight">
+                <h4>Company Two</h4>
+                <p>Company Two offers top-notch services in marketing, helping local businesses grow and reach new customers.</p>
+            </div>
+            <div class="spotlight">
+                <h4>Company Three</h4>
+                <p>Company Three is a leader in sustainability, offering eco-friendly products and services to businesses in the region.</p>
+            </div>
         </section>
     </main>
 
@@ -96,8 +97,6 @@
             <li><a href="#terms">Terms of Service</a></li>
         </ul>
     </footer>
-
-    <!-- JavaScript -->
     <script src="scripts/scripts.js"></script>
 </body>
 </html>
