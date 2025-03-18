@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal website showcasing my projects and links to my professional profiles.">
+    <meta name="author" content="Taeg Dayley">
+    <title>Taeg Dayley's Website</title>
+
+    <!-- Open Graph Meta Tags -->
+    <link rel="icon" href="images/favicon.png" type="logo/png" />
+    <meta property="og:title" content="Taeg Dayley's Website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/images/logo.jpg" />
+    <meta property="og:url" content="https://tedayley.github.io/wdd231/">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Lora:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>San Miguel Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="directory.html">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#join">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Image Section -->
+        <section class="hero">
+            <img src="images/hero-image.jpg" alt="San Miguel City" class="hero-image">
+            <h2>Welcome to the San Miguel Chamber of Commerce</h2>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta">
+            <p>Join the Chamber of Commerce today and be part of our thriving business community!</p>
+            <a href="join.html" class="cta-button">Join Now</a>
+        </section>
+
+        <!-- Current Events Section -->
+        <section class="events" id="events">
+            <h3>Current Events</h3>
+            <ul>
+                <li>Marrying a train - March 25th, 2025</li>
+                <li>Dramatic reinactment of Monty Python - April 1st, 2025</li>
+                <li>Derivative Squaring Law - May 15th, 2025</li>
+            </ul>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather" id="weather">
+            <h3>Current Weather</h3>
+            <p id="current-temperature">Loading...</p>
+            <p id="current-condition">Loading...</p>
+            <h4>3-Day Forecast</h4>
+            <ul id="forecast">
+                <li>Day 1: <span id="forecast-day1">Loading...</span></li>
+                <li>Day 2: <span id="forecast-day2">Loading...</span></li>
+                <li>Day 3: <span id="forecast-day3">Loading...</span></li>
+            </ul>
+        </section>
+
+        <!-- Company Spotlights Section -->
+        <section class="spotlights" id="spotlights">
+            <h3>Company Spotlights</h3>
+            <!-- Spotlight cards will be dynamically loaded here -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 San Miguel Chamber of Commerce. All rights reserved.</p>
+        <ul>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+        </ul>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
