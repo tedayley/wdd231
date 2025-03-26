@@ -5,14 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Join Crazy Dave's Van of Commerce - Membership Form">
     <meta name="author" content="Taeg Dayley">
-    <title>Membership Form</title>
+    <meta property="og:title" content="Join Crazy Dave's Van of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://yourwebsite.com/membership">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Join Crazy Dave's Van of Commerce - Membership Form</title>
     <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/main.js" defer></script>
 </head>
 <body>
+    <header>
+        <h1>Join Crazy Dave's Van of Commerce</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     <main>
-        <header>
-            <h1>Join Crazy Dave's Van of Commerce</h1>
-        </header>
         <form action="thankyou.html" method="get">
             <label for="first_name">First Name:
                 <input type="text" id="first_name" name="first_name" autocomplete="given-name" required>
@@ -45,10 +58,12 @@
             <input type="hidden" name="timestamp" id="timestamp">
             <input type="submit" value="Submit Membership Application">
         </form>
-        
         <script>
             document.getElementById('timestamp').value = new Date().toISOString();
         </script>
     </main>
+    <footer>
+        <p>&copy; 2025 Crazy Dave's Van of Commerce. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
