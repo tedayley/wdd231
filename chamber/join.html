@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Crazy Dave's Van of Commerce - Membership Form">
+    <meta name="author" content="Taeg Dayley">
+    <title>Membership Form</title>
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Join Crazy Dave's Van of Commerce</h1>
+        </header>
+        <form action="thankyou.html" method="get">
+            <label for="first_name">First Name:
+                <input type="text" id="first_name" name="first_name" autocomplete="given-name" required>
+            </label>
+            <label for="last_name">Last Name:
+                <input type="text" id="last_name" name="last_name" autocomplete="family-name" required>
+            </label>
+            <label for="organization_title">Organizational Title:
+                <input type="text" id="organization_title" name="organization_title" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}" required>
+            </label>
+            <label for="email">Email Address:
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="example@example.com" required>
+            </label>
+            <label for="mobile_phone">Mobile Phone:
+                <input type="tel" id="mobile_phone" name="mobile_phone" autocomplete="tel" required>
+            </label>
+            <label for="organization">Business/Organization Name:
+                <input type="text" id="organization" name="organization" autocomplete="organization" required>
+            </label>
+            <fieldset>
+                <legend>Membership Level:</legend>
+                <label><input type="radio" name="membership_level" value="np" required> NP Membership (No Fee)</label>
+                <label><input type="radio" name="membership_level" value="bronze"> Bronze Membership</label>
+                <label><input type="radio" name="membership_level" value="silver"> Silver Membership</label>
+                <label><input type="radio" name="membership_level" value="gold"> Gold Membership</label>
+            </fieldset>
+            <label for="organization_description">Business/Organization Description:
+                <textarea id="organization_description" name="organization_description"></textarea>
+            </label>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Submit Membership Application">
+        </form>
+        
+        <script>
+            document.getElementById('timestamp').value = new Date().toISOString();
+        </script>
+    </main>
+</body>
+</html>
