@@ -1,0 +1,49 @@
+/* styles.css */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    margin: 40px;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.section {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+p, li {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.dark-mode {
+    background-color: #222;
+    color: #ddd;
+}
+
+.dark-mode .section {
+    background: #333;
+    color: #ddd;
+}
