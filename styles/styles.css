@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background: #0073e6;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 20px;
+}
+
+#visit-message {
+    background: #f8f8f8;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+.place-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background: white;
+    text-align: center;
+}
+
+.place-card img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #005bb5;
+}
+
+footer {
+    background: #0073e6;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Historic Museum",
+        "image": "images/museum.webp",
+        "address": "123 Heritage St, YourCity",
+        "description": "A museum showcasing local history and artifacts."
+    },
+    {
+        "name": "Botanical Garden",
+        "image": "images/garden.webp",
+        "address": "456 Green Ave, YourCity",
+        "description": "A beautiful botanical garden featuring rare plants."
+    },
+    {
+        "name": "Science Center",
+        "image": "images/science.webp",
+        "address": "789 Discovery Blvd, YourCity",
+        "description": "An interactive science museum for all ages."
+    },
+    {
+        "name": "City Park",
+        "image": "images/park.webp",
+        "address": "101 Park Lane, YourCity",
+        "description": "A relaxing green space with walking trails."
+    },
+    {
+        "name": "Art Gallery",
+        "image": "images/gallery.webp",
+        "address": "202 Creativity St, YourCity",
+        "description": "An exhibit of local and international artists."
+    },
+    {
+        "name": "Aquarium",
+        "image": "images/aquarium.webp",
+        "address": "303 Ocean Ave, YourCity",
+        "description": "A marine sanctuary with exotic sea creatures."
+    },
+    {
+        "name": "Zoo",
+        "image": "images/zoo.webp",
+        "address": "404 Wildlife Rd, YourCity",
+        "description": "A family-friendly zoo with animal exhibits."
+    },
+    {
+        "name": "Observatory",
+        "image": "images/observatory.webp",
+        "address": "505 Starry Night Dr, YourCity",
+        "description": "A telescope facility for stargazing events."
+    }
+]
