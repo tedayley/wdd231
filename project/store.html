@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="store">
+    <meta name="Author" content="Taeg Dayley">
+    <title>KeyCap Haven - store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>KeyCap Haven</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><button onclick="openContactForm()">Contact</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Shop Our KeyCaps</h2>
+    <div class="store-container">
+
+      <div class="product-card">
+        <img src="test.png" alt="Keycap 1">
+        <div class="product-title">Galaxy Swirl</div>
+        <div class="rating">★★★★★</div>
+        <div class="description">A shimmering deep-space inspired keycap with subtle purples and stars that glow faintly under RGB lighting.</div>
+      </div>
+
+      <div class="product-card">
+        <img src="test.png" alt="Keycap 2">
+        <div class="product-title">Neon Dragon</div>
+        <div class="rating">★★★★☆</div>
+        <div class="description">Bright and bold, this dragon-themed cap lights up any keyboard with its glowing scales and vibrant design.</div>
+      </div>
+
+      <div class="product-card">
+        <img src="test.png" alt="Keycap 3">
+        <div class="product-title">Pastel Pop</div>
+        <div class="rating">★★★★★</div>
+        <div class="description">Soft pastel tones meet fun bubblegum charm. Perfect for a cute aesthetic or kawaii desk setup.</div>
+      </div>
+
+      <div class="product-card">
+        <img src="test.png" alt="Keycap 4">
+        <div class="product-title">Cyber Skull</div>
+        <div class="rating">★★★☆☆</div>
+        <div class="description">A metallic skull design with green eyes and circuit-board detailing, perfect for cyberpunk fans.</div>
+      </div>
+
+      <div class="product-card">
+        <img src="test.png" alt="Keycap 5">
+        <div class="product-title">Frostbite</div>
+        <div class="rating">★★★★☆</div>
+        <div class="description">Icy blue and white resin swirl together in this chilly keycap that looks like it's carved from a glacier.</div>
+      </div>
+
+      <div class="product-card">
+        <img src="test.png" alt="Keycap 6">
+        <div class="product-title">Retro Sunset</div>
+        <div class="rating">★★★★★</div>
+        <div class="description">Bold oranges, purples, and reds collide in a keycap inspired by '80s synthwave aesthetics and sunsets.</div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Contact Modal (reused from index) -->
+  <div id="contactModal" style="display:none;">
+    <div>
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Send</button>
+        <button type="button" onclick="closeContactForm()">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function openContactForm() {
+      document.getElementById('contactModal').style.display = 'flex';
+    }
+
+    function closeContactForm() {
+      document.getElementById('contactModal').style.display = 'none';
+    }
+
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Message sent! (This is a placeholder)');
+      closeContactForm();
+    });
+  </script>
+
+</body>
+</html>

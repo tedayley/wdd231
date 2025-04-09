@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="The about page">
+        <meta name="Author" content="Taeg Dayley">
+        <title>KeyCap Haven - About page</title>
+        <link rel="stylesheet" href="styles.css">
+        <script defer src="script.js"></script>
+    </head>
+<body>
+
+  <header>
+    <h1>KeyCap Haven</h1>
+    <nav>
+      <ul>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><button onclick="openContactForm()">Contact</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about-content">
+    <h2>About KeyCap Haven</h2>
+    <p>Welcome to KeyCap Haven — where creativity meets your keyboard! We are passionate about bringing personality and flair to every keystroke through our carefully crafted artisan keycaps.</p>
+
+    <p>Whether you're a gamer, coder, collector, or just someone who wants to add a bit of fun to their desk, our unique keycaps are designed to inspire. From galactic swirls to neon dragons, every piece is made with love and attention to detail.</p>
+
+    <p>We’re a small team of makers and enthusiasts who believe keyboards should be as expressive as the people who use them. Our mission is simple: create beautiful, high-quality keycaps that feel as good as they look.</p>
+
+    <p>Thanks for stopping by — we’re glad you’re here!</p>
+  </main>
+
+  <!-- Contact Modal (same across pages) -->
+  <div id="contactModal" style="display:none;">
+    <div>
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">Send</button>
+        <button type="button" onclick="closeContactForm()">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function openContactForm() {
+      document.getElementById('contactModal').style.display = 'flex';
+    }
+
+    function closeContactForm() {
+      document.getElementById('contactModal').style.display = 'none';
+    }
+
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Message sent! (This is a placeholder)');
+      closeContactForm();
+    });
+  </script>
+
+</body>
+</html>
